@@ -1,0 +1,98 @@
+/* 页面整体 */
+body {
+    margin: auto;
+    max-width: 1200px;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* 页脚 */
+footer {
+    color: #888;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 导航栏 */
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0 auto;
+    overflow: hidden;
+    background-color: #333;
+    height: 60px;
+}
+
+nav li {
+    float: left;
+    font-size: 18px;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+nav .search-container {
+  width: 200px;
+  height: 40px;
+  float: right;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+nav .search-container input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    background-color: #fff;
+
+    font-size: 12px;
+    text-align: left;
+    /*height: 30px;
+
+
+
+
+    margin-top: 8px;
+    margin-right: 0;
+    */
+}
+
+nav .search-container button {
+    width: 80px;
+    height: 100%;
+    background-color: #FF4200;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    float: right;
+
+/*
+    position: absolute;
+
+    right: 0;
+
+
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - 金融数据库</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href="{{ url_for('index') }}">首页</a>
+        </li>
+        <li>
+            <a href="{{ url_for('performance') }}">盈亏</a>
+        </li>
+        <li>
+            <a href="{{ url_for('research') }}">研究</a>
+        </li>
+        <li>
+            <a href="{{ url_for('report') }}">报告</a>
+        </li>
+        <li class="search-container">
+            <form method="post" action="#">
+                <input type="text" name="search" placeholder="搜索...">
+                <button type="submit">搜索</button>
+            </form>
+        </li>
+    </ul>
+</nav>
+
+{% block main %}{% endblock %}
+
+<footer>
+    <p>&copy; 2022 Bruce Frank Wong</p>
+</footer>
+
+</body>
+</html>
